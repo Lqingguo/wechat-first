@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class='warp'>
+  <image class='img' src='/images/index/cart.jpg'></image>
+  <text class='title'>Hearo Eather</text>
+  <view class='textwarp' bindtap='tolist'>
+    <text class='content'>{{msg}}</text>
+  </view>
+</view>

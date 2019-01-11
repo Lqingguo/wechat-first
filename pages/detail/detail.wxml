@@ -1,0 +1,19 @@
+<view class='detailContainer'>
+  <image class='detailImg' src='{{datailObj.detail_img}}'></image>
+  <view class='avatar_date'>
+    <image src='/images/avatar/0.png'></image>
+    <text>{{datailObj.author}}</text>
+    <text>发布于</text>
+    <text>{{datailObj.date}}</text>
+  </view>
+  <text class='company'>{{datailObj.title}}</text>
+  <view class='parent'>
+    <view class='collection_share_container'>
+      <image bindtap='changeimg' src='{{isShow?"/images/icon/collection.png":"/images/icon/collection-anti.png"}}'></image>
+      <image src='/images/icon/share-anti.png'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+  <button>转发次文章</button>
+  <text class='content'>{{datailObj.detail_content}}</text>
+</view>

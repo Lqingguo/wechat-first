@@ -1,0 +1,24 @@
+
+<import src="/pages/listTmp/listTmp" />
+<view>
+  <swiper indicator-dots autoplay circular indicator-active-color='blue' indicator-color='green'>
+    <swiper-item>
+      <image src='/images/detail/carousel/01.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/02.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/03.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/detail/carousel/04.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for='{{datas}}' wx:key='{{index}}'>
+     <view bindtap='todetail' data-index='{{index}}'>
+       <template is='listTmp' data='{{...item}}'/>
+     </view>
+  </block>
+ 
+</view>
